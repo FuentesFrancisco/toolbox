@@ -4,7 +4,7 @@ Frontend deploy en firebase: https://toolbox-challenge.web.app/
 Pasos para correr con docker: \
 1-clonar el repositorio  \
 2-parados en la raiz del proyecto ejecutar docker-compose up \
-3-ejecutar el proyecto. en http://localhost/ se encuentra el front end y en localhost:3001 se encuentra el backend corriendo 
+3-Abrir la App que se encuentra en http://localhost/ el front end y en localhost:3001 se encuentra el backend corriendo 
 
 Pasos para correr el frontend y el backend por separado: 
 
