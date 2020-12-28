@@ -45,27 +45,30 @@ const NavBar = () => {
     >
       <div className='mx-auto'>
         <div className='d-flex'>
-          <form class='form-floating'>
+          <div>
+            {error === 'you must enter at least 2 letters' && (
+              <label
+                className='position-absolute text-danger  fs-6'
+                style={{ left: '45%', top: '22px' }}
+              >
+                {error}
+              </label>
+            )}
             <input
               className={
                 error === 'you must enter at least 2 letters'
                   ? 'form-control me-3 mt-2 mb-2 is-invalid'
                   : 'form-control me-3 mt-2 mb-2'
               }
-              id='floatingInputInvalid'
-              style={{ width: '700px' }}
               placeholder='insert text'
-              type='search'
+              style={{ width: '500px' }}
+              type='Search'
               aria-label='Search'
               value={input}
               onChange={e => handleChange(e)}
             />
-            {error === 'ingresar al menos 2 letras' && (
-              <label className='text-danger' for='floatingInputInvalid'>
-                {error}
-              </label>
-            )}
-          </form>
+          </div>
+
           {!error ? (
             <button
               className=' btn mt-2 mb-2'
